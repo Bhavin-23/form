@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body{
+           align-items: center;
+           background-color: rgb(241, 239, 238);
+           font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+          }
+        .container{
+            text-align: center;
+            border-radius: 5px;
+            /* box-shadow: 1px 1px 1px 1px;
+            border-radius: 5px; */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 600px;
+            width: 340px;
+            padding: 30px;
+            background-color: white;
+            margin: 0;
+            }
+         .formbox{
+            /* border-radius: 0px;
+            box-shadow:1px 1px 1px 1px;
+            height: 500px;
+            width: 300px;
+            padding: 10px; */
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+             }
+         .logo{
+            text-align: center;
+            /* padding: 10px; */
+            margin-bottom: 20px;
+           }
+           form{
+            display: flex;
+            flex-direction: column;
+           }
+           label{
+            font-size: 14px;
+            margin-bottom: 5px;
+            font-size: 15px;
+           }
+           input{
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            border: 1px solid black;
+           }
+           button{
+            background-color: gold;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+           }
+           button:hover {
+                background-color: #f7ca00;
+            }
+
+            p {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+
+            a {
+                color: #0066c0;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://pngimg.com/uploads/amazon/amazon_PNG6.png" alt=" amazon-logo"  width="90px">
+        </div>
+        <div class="formbox">
+            <h2>create account</h2>
+            <form action="#">
+                <label for="">Your Name:</label>
+                <input type="text" id="" placeholder="Frist and Last Name" required>
+
+                <label for="">Email:</label>
+                <input type="email" id="" placeholder="abcd@gmail.com" required>
+
+                <label for="">Password:</label>
+                <input type="password" id="" placeholder="enter your password" required>
+
+                <label for="">Password:</label>
+                <input type="password" id="" placeholder="re enter your password" required>
+
+                <button type="submit">continue</button>
+            </form>
+            <p>By creating an account, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+            <p>Already have an account? <a href="#">Sign in</a>.</p>
+            <p>Buying for work? <a href="#">Create a free business account</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
